@@ -4,8 +4,9 @@ const messageInput = document.getElementById("message-input");
 const roomInput = document.getElementById("room-input");
 const form = document.getElementById("form")
 
-const socket = io('http://localhost:3000')
-
+// This matches the first line of the server
+// const socket = io('http://localhost:4500')
+const socket = io('https://danhenrydev.com/api/jeopardy_gameplay')
 socket.on("connect", () => {
     displayMessage(`You connected with id: ${socket.id}`)
 })

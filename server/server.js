@@ -1,6 +1,7 @@
-const io = require('socket.io')(3000, {
+const io = require('socket.io')(4500, {
     cors: {
-        origin: ['http://localhost:8080']
+        //origin: ['http://localhost:8080']
+        origin: ['http://localhost:8080','https://danhenrydev.com']
     }
 });
 
